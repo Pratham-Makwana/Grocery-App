@@ -20,6 +20,8 @@ appAxios.interceptors.request.use(async config => {
 appAxios.interceptors.response.use(
   response => response,
   async error => {
+    console.log(error);
+    
     if (error.response && error.response.status === 401) {
       //   IF TOKEN EXPIRE , REFRESH IT
       try {
@@ -38,7 +40,7 @@ appAxios.interceptors.response.use(
     if (error.response && error.response.status != 401) {
       const errorMessage =
         error.response.data.message || 'Something went wrong';
-      console.log(errorMessage);
+      console.log("=> apiInterceptors", errorMessage);
     }
 
     return Promise.resolve(error);

@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* Grocery_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* Grocery_AppTests.m */; };
+		042F984461B44BFFA7A8BD04 /* Okra-MediumLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6545B423EEA54C418B375387 /* Okra-MediumLight.ttf */; };
+		04EED0F70D79438DA505A635 /* Okra-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD2DD6675224B5A9EBA0968 /* Okra-Bold.ttf */; };
 		0C80B921A6F3F58F76C31292 /* libPods-Grocery_App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-Grocery_App.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		31BECEF68D73C9ECE41AAAD7 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		7699B88040F8A987B510C191 /* libPods-Grocery_App-Grocery_AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Grocery_App-Grocery_AppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		04EED0F70D79438DA505A635 /* Okra-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD2DD6675224B5A9EBA0968 /* Okra-Bold.ttf */; };
 		B6AA73E39E534973A32970AA /* Okra-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC6703ECC9DD441FB5E34259 /* Okra-ExtraBold.ttf */; };
-		FBFF89C3ADE14924A07D1C56 /* Okra-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D8574B73A054FA6859DA8B8 /* Okra-Medium.ttf */; };
-		042F984461B44BFFA7A8BD04 /* Okra-MediumLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6545B423EEA54C418B375387 /* Okra-MediumLight.ttf */; };
 		D3CB39AFD2794171B81BC4C8 /* Okra-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5A79D998E4A4BEF96522909 /* Okra-Regular.ttf */; };
+		FBFF89C3ADE14924A07D1C56 /* Okra-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D8574B73A054FA6859DA8B8 /* Okra-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +48,14 @@
 		5709B34CF0A7D63546082F79 /* Pods-Grocery_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocery_App.release.xcconfig"; path = "Target Support Files/Pods-Grocery_App/Pods-Grocery_App.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-Grocery_App-Grocery_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocery_App-Grocery_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Grocery_App-Grocery_AppTests/Pods-Grocery_App-Grocery_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-Grocery_App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Grocery_App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6545B423EEA54C418B375387 /* Okra-MediumLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-MediumLight.ttf"; path = "../src/assets/fonts/Okra-MediumLight.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Grocery_App/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Grocery_App-Grocery_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Grocery_App-Grocery_AppTests.release.xcconfig"; path = "Target Support Files/Pods-Grocery_App-Grocery_AppTests/Pods-Grocery_App-Grocery_AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9D8574B73A054FA6859DA8B8 /* Okra-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-Medium.ttf"; path = "../src/assets/fonts/Okra-Medium.ttf"; sourceTree = "<group>"; };
+		DC6703ECC9DD441FB5E34259 /* Okra-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-ExtraBold.ttf"; path = "../src/assets/fonts/Okra-ExtraBold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		FFD2DD6675224B5A9EBA0968 /* Okra-Bold.ttf */ = {isa = PBXFileReference; name = "Okra-Bold.ttf"; path = "../src/assets/fonts/Okra-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DC6703ECC9DD441FB5E34259 /* Okra-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Okra-ExtraBold.ttf"; path = "../src/assets/fonts/Okra-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9D8574B73A054FA6859DA8B8 /* Okra-Medium.ttf */ = {isa = PBXFileReference; name = "Okra-Medium.ttf"; path = "../src/assets/fonts/Okra-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6545B423EEA54C418B375387 /* Okra-MediumLight.ttf */ = {isa = PBXFileReference; name = "Okra-MediumLight.ttf"; path = "../src/assets/fonts/Okra-MediumLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F5A79D998E4A4BEF96522909 /* Okra-Regular.ttf */ = {isa = PBXFileReference; name = "Okra-Regular.ttf"; path = "../src/assets/fonts/Okra-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F5A79D998E4A4BEF96522909 /* Okra-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-Regular.ttf"; path = "../src/assets/fonts/Okra-Regular.ttf"; sourceTree = "<group>"; };
+		FFD2DD6675224B5A9EBA0968 /* Okra-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Okra-Bold.ttf"; path = "../src/assets/fonts/Okra-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +163,7 @@
 			sourceTree = "<group>";
 		};
 		E0231CF799DC463B8D0C6F31 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				FFD2DD6675224B5A9EBA0968 /* Okra-Bold.ttf */,
 				DC6703ECC9DD441FB5E34259 /* Okra-ExtraBold.ttf */,
@@ -171,8 +172,8 @@
 				F5A79D998E4A4BEF96522909 /* Okra-Regular.ttf */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
 			path = "";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -274,6 +275,7 @@
 				FBFF89C3ADE14924A07D1C56 /* Okra-Medium.ttf in Resources */,
 				042F984461B44BFFA7A8BD04 /* Okra-MediumLight.ttf in Resources */,
 				D3CB39AFD2794171B81BC4C8 /* Okra-Regular.ttf in Resources */,
+				31BECEF68D73C9ECE41AAAD7 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,7 +615,14 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -678,7 +687,13 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

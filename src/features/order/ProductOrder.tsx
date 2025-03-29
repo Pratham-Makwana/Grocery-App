@@ -45,7 +45,7 @@ const ProductOrder = () => {
       item: item._id,
       count: item.count,
     }));
-    console.log(formattedData);
+    console.log("formattedData",formattedData);
     
 
     if (formattedData.length == 0) {
@@ -55,9 +55,9 @@ const ProductOrder = () => {
 
     setLoading(true);
     const data = await createOrder(formattedData, totalItemPrice);
-    // console.log(data);
+    console.log(" createOrder Data", data);
     
-    if (data !== null && data.isNotEmpty()) {
+    if (data !== null) {
       setCurrentOrder(data);
       clearCart();
       navigate('OrderSuccess', {...data});

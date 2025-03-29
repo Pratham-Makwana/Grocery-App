@@ -7,11 +7,11 @@ import CustomeText from '@components/ui/CustomText';
 import {RFValue} from 'react-native-responsive-fontsize';
 import {navigate} from '@utils/NavigationUtils';
 
-interface CArdSummaryProps {
+interface CardSummaryProps {
   cartCount: number;
   cartImage: string;
 }
-const CartSummary: FC<CArdSummaryProps> = ({cartCount, cartImage}) => {
+const CartSummary: FC<CardSummaryProps> = ({cartCount, cartImage}) => {
   return (
     <View style={styles.container}>
       <View style={styles.flexRowGap}>
@@ -26,7 +26,11 @@ const CartSummary: FC<CArdSummaryProps> = ({cartCount, cartImage}) => {
         <CustomeText fontFamily={Fonts.SemiBold}>
           {cartCount} ITEM{cartCount > 1 ? 'S' : ''}
         </CustomeText>
-        <Icon name="arrow-drop-up" color="#4CAF50" size={RFValue(25)} />
+        <Icon
+          name="arrow-drop-up"
+          color={Colors.secondary}
+          size={RFValue(25)}
+        />
       </View>
 
       <TouchableOpacity
@@ -38,7 +42,6 @@ const CartSummary: FC<CArdSummaryProps> = ({cartCount, cartImage}) => {
         </CustomeText>
         <Icon name="arrow-right" color="#fff" size={RFValue(25)} />
       </TouchableOpacity>
-      
     </View>
   );
 };
@@ -69,7 +72,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingVertical: screenHeight * 0.01,
     borderRadius: screenWidth * 0.025,
-    backgroundColor: '#4CAF50',
+    backgroundColor: Colors.secondary,
     paddingHorizontal: screenWidth * 0.1,
   },
   btnText: {

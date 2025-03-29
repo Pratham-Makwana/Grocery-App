@@ -30,6 +30,7 @@ import Content from '@components/dashboard/Content';
 import StickySearchBar from './StickySearchBar';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 import withCart from '@features/card/WithCart';
+import withLiveStatus from '@features/map/withLiveStatus';
 
 const NOTICE_HEIGHT = -(NoticeHeight + 12);
 
@@ -75,6 +76,8 @@ const ProductDashboard = () => {
       Geolocation.getCurrentPosition(
         position => {
           const {latitude, longitude} = position.coords;
+          // console.log(longitude, latitude);
+
           reverseGeocode(latitude, longitude, setUser);
         },
         error => console.log(error),
@@ -84,6 +87,7 @@ const ProductDashboard = () => {
         },
       );
     };
+    updateUser();
     slideDown();
     const timeoutId = setTimeout(() => {
       slideUp();
@@ -91,7 +95,7 @@ const ProductDashboard = () => {
     return () => clearTimeout(timeoutId);
 
     // =======================================
-    // updateUser()
+
     // ======================================
   }, []);
   return (
@@ -192,4 +196,6 @@ const styles = StyleSheet.create({
   },
 });
 
-export default withCart(withCollapsibleContext(ProductDashboard));
+export default withLiveStatus(
+  withCart(withCollapsibleContext(ProductDashboard)),
+);

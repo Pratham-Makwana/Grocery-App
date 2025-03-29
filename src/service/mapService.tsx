@@ -8,19 +8,23 @@ export const reverseGeocode = async (
   setUser: any,
 ) => {
   try {
-    const response = await axios.get(
-      `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${GOOGLE_MAP_API}`,
+    // const response = await axios.get(
+    //   `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${GOOGLE_MAP_API}`,
+    // );
+    updateUserLocation(
+      {liveLocation: {latitude, longitude}},
+      setUser,
     );
 
-    if (response.data.status == 'OK') {
-      const address = response.data.results[0].formatted_address;
-      updateUserLocation(
-        {liveLocation: {latitude, longitude}, address},
-        setUser,
-      );
-    } else {
-      console.error('Geo Code Failed', response.data);
-    }
+    // if (response.data.status == 'OK') {
+    //   const address = response.data.results[0].formatted_address;
+    //   updateUserLocation(
+    //     {liveLocation: {latitude, longitude}, address},
+    //     setUser,
+    //   );
+    // } else {
+    //   console.error('Geo Code Failed', response.data);
+    // }
   } catch (error) {
     console.log('Geo Code Failed', error);
   }

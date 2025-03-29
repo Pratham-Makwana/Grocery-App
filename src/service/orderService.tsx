@@ -8,7 +8,7 @@ export const createOrder = async (items: any, totalPrice: number) => {
       branch: BRANCH_ID,
       totalPrice: totalPrice,
     });
-    console.log("==> createOrder",response.data);
+    // console.log("==> createOrder",response.data);
     
     return response.data;
   } catch (error) {

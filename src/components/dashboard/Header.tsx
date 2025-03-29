@@ -26,7 +26,7 @@ const Header: FC<{showNotice: () => void}> = ({showNotice}) => {
 
   useEffect(() => {
     // ===============================
-    // updateUserLocation()
+    updateUserLocation()
     // ===============================
   }, []);
   return (
