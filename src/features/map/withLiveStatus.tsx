@@ -1,6 +1,7 @@
 import CustomeText from '@components/ui/CustomText';
 import {useNavigationState} from '@react-navigation/native';
-import {SOCKEt_URL} from '@service/config';
+import { SOCKET_URL } from '@service/config';
+
 import {getOrderById} from '@service/orderService';
 import {useAuthStore} from '@state/authStore';
 import {hocStyles} from '@styles/GlobalStyles';
@@ -19,7 +20,7 @@ const withLiveStatus = <P extends object>(
       state => state.routes[state.index].name,
     );
 
-    console.log("==> withLiveStatus currentOrder ", currentOrder?.items.length);
+    console.log("==> withLiveStatus currentOrder ", currentOrder);
     
 
     const fetchOrderDetails = async () => {
@@ -28,9 +29,10 @@ const withLiveStatus = <P extends object>(
 
       setCurrentOrder(data);
     };
+    
     useEffect(() => {
       if (currentOrder) {
-        const socketInstance = io(SOCKEt_URL, {
+        const socketInstance = io(SOCKET_URL, {
           transports: ['websocket'],
           withCredentials: true,
         });
@@ -50,6 +52,7 @@ const withLiveStatus = <P extends object>(
         };
       }
     }, [currentOrder]);
+
     return (
       <View style={style.container}>
         <WrappedComponent {...props} />
@@ -71,7 +74,7 @@ const withLiveStatus = <P extends object>(
                   Order is {currentOrder?.status}
                 </CustomeText>
                 <CustomeText variant="h9" fontFamily={Fonts.Medium}>
-                  {currentOrder?.items![0]?.item.name +
+                  {currentOrder?.items[0]?.item.name +
                     (currentOrder?.items.length - 1 > 0
                       ? `and ${currentOrder?.items?.length - 1} + items`
                       : '')}

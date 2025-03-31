@@ -21,7 +21,7 @@ const DeliveryLogin: FC = () => {
     setLoading(true);
     try {
       // ====================================================================
-      // await deliveryLogin(email,password);
+      await deliveryLogin(email,password);
       // ====================================================================
       resetAndNavigate('DeliveryDashboard');
     } catch (error) {
@@ -66,6 +66,7 @@ const DeliveryLogin: FC = () => {
             }
             placeholder="Email"
             inputMode="email"
+            autoCapitalize='none'
             right={false}
           />
 

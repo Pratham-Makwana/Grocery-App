@@ -45,7 +45,7 @@ const BillDetails: FC<{totalItemPrice: number}> = ({totalItemPrice}) => {
         <ReportItem iconName="shopping-bag" title="Handing charge" price={2} />
         <ReportItem iconName="cloudy-snowing" title="Surge charge" price={3} />
       </View>
-      <View style={[styles.flexRowBetween, {marginBottom : 15}]}>
+      <View style={[styles.flexRowBetween, {marginBottom: 15}]}>
         <CustomeText
           variant="h7"
           style={styles.text}
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     marginVertical: 15,
   },
   text: {
-    marginVertical: 10,
+    marginHorizontal: 10,
     marginTop: 15,
   },
   billContainer: {

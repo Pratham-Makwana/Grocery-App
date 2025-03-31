@@ -22,7 +22,7 @@ interface DecodedToken {
 
 const SplashScreen: FC = () => {
   const {user, setUser} = useAuthStore();
-  console.log(user);
+  console.log("==> user", user);
   
 
   const takenCheck = async () => {

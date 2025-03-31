@@ -9,7 +9,7 @@ export const createOrder = async (items: any, totalPrice: number) => {
       totalPrice: totalPrice,
     });
     // console.log("==> createOrder",response.data);
-    
+
     return response.data;
   } catch (error) {
     console.log('Create Order Error', error);
@@ -20,11 +20,21 @@ export const createOrder = async (items: any, totalPrice: number) => {
 export const getOrderById = async (id: string) => {
   try {
     const response = await appAxios.get(`/order/${id}`);
-    console.log("==> getOrderById ", response.data);
-    
+    console.log('==> getOrderById ', response.data);
+
     return response.data;
   } catch (error) {
     console.log('Fecth Order Error', error);
+    return null;
+  }
+};
+
+export const fethcCustomerOrders = async (userId: string) => {
+  try {
+    const response = await appAxios.get(`/order?customerId=${userId}`);
+    return response.data
+  } catch (error) {
+    console.log(`Fethc Customer Order error`, error);
     return null;
   }
 };
